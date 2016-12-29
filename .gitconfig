@@ -1,0 +1,9 @@
+[user]
+	name = boygirl
+	email = lauren.eastridge@formidable.com
+[credential]
+	helper = osxkeychain
+[alias]
+	co = checkout
+	br = branch
+	st = status
