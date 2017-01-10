@@ -90,6 +90,7 @@ export NVM_DIR="/Users/boygirl/.nvm"
 export PATH="${PATH}:./node_modules/.bin"
 
 export EDITOR="code -w"
+export VISUAL="code -w"
 
 PROMPT='%n: %{$fg[cyan]%}%c%{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
