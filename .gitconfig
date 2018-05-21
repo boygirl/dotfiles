@@ -6,6 +6,12 @@
 [alias]
 	co = checkout
 	br = branch
-	st = status
+	s = status
+	a = !git add . && git status
+	r = !git reset HEAD . && git status
+	aliases = !git config --list | grep alias | cut -c 7-
+	co-pr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 [core]
 	editor = 'code' --wait
